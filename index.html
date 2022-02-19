@@ -19,20 +19,20 @@
   <div class="wrapper">
     <div class="container bg-white shadow">
       <h2 class="container-header text-center">Buat Data Buku Baru</h2>
-      <form class="form" action="#" id="form">
+      <form class="form" action="#" id="addBookForm">
         <div class="form-group form-title">
           <label for="title">Judul</label>
-          <input type="text" id="title" name="title" required>
+          <input type="text" id="title" name="title" >
         </div>
 
         <div class="form-group form-title">
           <label for="author">Penulis</label>
-          <input type="text" id="author" name="author" required>
+          <input type="text" id="author" name="author" >
         </div>
 
         <div class="form-group form-title">
           <label for="year">Tahun Terbit</label>
-          <input type="text" id="year" name="year" required>
+          <input type="text" id="year" name="year" >
         </div>
 
         <div class="form-group form-title">
@@ -42,8 +42,23 @@
           </label>
         </div>
 
-        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+        <input type="submit" value="Submit" name="Submit" class="btn-submit" >
       </form>
+    </div>
+
+    <div class="container bg-white shadow">
+      <h2 class="container-header">Cari Buku Berdasarkan Judul</h2>
+      <form class="form" action="#" id="searchBooksForm">
+        <div class="form-group form-title">
+          <label for="keyword">Keyword</label>
+          <input type="text" id="keyword" name="keyword" >
+        </div>
+        
+        <input type="submit" value="Search" name="Search" class="btn-submit" >
+      </form>
+      <div class="list-item" id="search-books">
+
+      </div>
     </div>
 
     <div class="container bg-white shadow">
